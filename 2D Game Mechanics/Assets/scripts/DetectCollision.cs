@@ -7,12 +7,4 @@ public class DetectCollision : MonoBehaviour
     public GameObject PlayerFX;
     public GameObject EnemyFX;
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.CompareTag("PLayer"))
-        {
-            Instantiate(PlayerFX, other.transform.position, PlayerFX.transform.rotation);
-            Destroy(other.gameObject);
-        }
-    }
 }
