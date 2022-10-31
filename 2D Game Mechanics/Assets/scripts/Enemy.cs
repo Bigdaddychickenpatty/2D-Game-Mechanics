@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public float Speed = 1;
-
     private Rigidbody2D _enemyRb;
     private GameObject _player;
 
